@@ -1,30 +1,45 @@
 package telran.introduction;
 
 public class Calculations {
+    /**
+     * Returns the sum of the arguments.
+     */
     public static int sum(int op1, int op2) {
         int res = op1 + op2;
 
         return res;
     }
 
+    /**
+     * Returns the difference of the arguments.
+     */
     public static int subtract(int op1, int op2) {
         int res = op1 - op2;
     
         return res;
     }
 
+    /**
+     * Returns the product of the arguments.
+     */
     public static int multiply(int op1, int op2) {
         int res = op1 * op2;
     
         return res;
     }
 
+    /**
+     * Returns the quotient of the arguments.
+     */
     public static int divide(int op1, int op2) {
         int res = op1 / op2;
 
         return res;
     }
 
+    /**
+     * Returns the sum of the digits in the argument.
+     */
     public static int sumOfDigits(int op1) {
         if (op1 < 0) {
             op1 = -op1;
@@ -40,6 +55,9 @@ public class Calculations {
         return res;
     }
 
+    /**
+     * Returns the maximum digit of the argument.
+     */
     public static int maxOfDigits(int op1) {
         if (op1 < 0) {
             op1 = -op1;
@@ -58,6 +76,9 @@ public class Calculations {
         return res;
     }
 
+    /**
+     * Checks whether a number can be divided without a remainder.
+     */
     public static boolean isDividedOn(int number, int divider) {
         boolean res = number % divider == 0;
 
