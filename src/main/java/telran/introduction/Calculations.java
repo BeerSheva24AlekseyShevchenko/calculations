@@ -7,42 +7,39 @@ final public class Calculations {
      * Returns the sum of the arguments.
      */
     public static int sum(int op1, int op2) {
-        int res = op1 + op2;
-        long resLong = (long)op1 + (long)op2;
+        long res = (long)op1 + (long)op2;
 
-        if (res != resLong) {
+        if ((int)res != res) {
             throw new ArithmeticException("integer overflow");
         }
 
-        return res;
+        return (int)res;
     }
 
     /**
      * Returns the difference of the arguments.
      */
     public static int subtract(int op1, int op2) {
-        int res = op1 - op2;
-        long resLong = (long)op1 - (long)op2;
+        long res = (long)op1 - (long)op2;
     
-        if (res != resLong) {
+        if ((int)res != res) {
             throw new ArithmeticException("integer overflow");
         }
 
-        return res;
+        return (int)res;
     }
 
     /**
      * Returns the product of the arguments.
      */
     public static int multiply(int op1, int op2) {
-        int res = op1 * op2;
-        long resLong = (long)op1 * (long)op2;
+        long res = (long)op1 * (long)op2;
     
-        if (res != resLong) {
+        if ((int)res != res) {
             throw new ArithmeticException("integer overflow");
         }
     
-        return res;
+        return (int)res;
     }
 
     /**
