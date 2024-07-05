@@ -50,6 +50,16 @@ public class CalculationsTest {
 
     @ParameterizedTest
     @CsvSource({
+        "-123, 123",
+        "0, 0",
+        "123, 123",
+    })
+    void absTest(int op1, int result) {
+        assertEquals(result, abs(op1));
+    }
+
+    @ParameterizedTest
+    @CsvSource({
         "-123, 6",
         "000, 0",
         "123, 6",

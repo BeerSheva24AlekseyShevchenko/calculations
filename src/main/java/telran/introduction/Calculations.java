@@ -1,6 +1,6 @@
 package telran.introduction;
 
-public class Calculations {
+public class Calculations {    
     /**
      * Returns the sum of the arguments.
      */
@@ -38,12 +38,19 @@ public class Calculations {
     }
 
     /**
+     * Returns the absolute value of the argument.
+     */
+    public static int abs(int op1) {
+        int res = op1 < 0 ? -op1 : op1;
+
+        return res;
+    }
+
+    /**
      * Returns the sum of the digits in the argument.
      */
     public static int sumOfDigits(int op1) {
-        if (op1 < 0) {
-            op1 = -op1;
-        }
+        op1 = abs(op1);
 
         int res = 0;
 
@@ -59,9 +66,7 @@ public class Calculations {
      * Returns the maximum digit of the argument.
      */
     public static int maxOfDigits(int op1) {
-        if (op1 < 0) {
-            op1 = -op1;
-        }
+        op1 = abs(op1);
 
         int res = 0;
 
