@@ -11,7 +11,7 @@ final public class Calculations {
         long resLong = (long)op1 + (long)op2;
 
         if (res != resLong) {
-            throw new ArithmeticException("Integer range exceeded");
+            throw new ArithmeticException("integer overflow");
         }
 
         return res;
@@ -25,7 +25,7 @@ final public class Calculations {
         long resLong = (long)op1 - (long)op2;
     
         if (res != resLong) {
-            throw new ArithmeticException("Integer range exceeded");
+            throw new ArithmeticException("integer overflow");
         }
 
         return res;
@@ -39,7 +39,7 @@ final public class Calculations {
         long resLong = (long)op1 * (long)op2;
     
         if (res != resLong) {
-            throw new ArithmeticException("Integer range exceeded");
+            throw new ArithmeticException("integer overflow");
         }
     
         return res;
