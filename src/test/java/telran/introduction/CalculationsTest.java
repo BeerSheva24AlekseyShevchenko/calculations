@@ -81,7 +81,7 @@ public class CalculationsTest {
     @ParameterizedTest
     @CsvSource({
         "-6, 2, true",
-        "0, 2, true",
+        "0, 0, false",
         "6, 2, true",
         "-5, 2, false",
         "5, 2, false",

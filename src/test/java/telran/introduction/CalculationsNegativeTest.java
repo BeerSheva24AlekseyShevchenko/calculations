@@ -13,11 +13,6 @@ public class CalculationsNegativeTest {
     }
 
     @Test
-    void isDividedOnByZeroTest() {
-        assertThrows(ArithmeticException.class, () -> isDividedOn(1, 0));
-    }
-
-    @Test
     void sumIntOverLimitTest() {
         assertThrows(ArithmeticException.class, () -> sum(Integer.MAX_VALUE, 1));
     }

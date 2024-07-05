@@ -99,7 +99,7 @@ final public class Calculations {
      * Checks whether a number can be divided without a remainder.
      */
     public static boolean isDividedOn(int number, int divider) {
-        boolean res = number % divider == 0;
+        boolean res = (divider != 0) && (number % divider == 0);
 
         return res;
     }
