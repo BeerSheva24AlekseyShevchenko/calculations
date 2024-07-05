@@ -48,6 +48,17 @@ Returns the quotient of the arguments
 
 ```
 
+**abs**
+
+Returns the absolute value of the argument.
+
+```java
+  int result = Calculations.abs(-123);
+
+  // result = 123
+
+```
+
 **sumOfDigits**
 
 Returns the sum of the digits in the argument
