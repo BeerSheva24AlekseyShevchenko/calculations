@@ -8,6 +8,11 @@ final public class Calculations {
      */
     public static int sum(int op1, int op2) {
         int res = op1 + op2;
+        long resLong = (long)op1 + (long)op2;
+
+        if (res != resLong) {
+            throw new ArithmeticException("Integer range exceeded");
+        }
 
         return res;
     }
@@ -17,7 +22,12 @@ final public class Calculations {
      */
     public static int subtract(int op1, int op2) {
         int res = op1 - op2;
+        long resLong = (long)op1 - (long)op2;
     
+        if (res != resLong) {
+            throw new ArithmeticException("Integer range exceeded");
+        }
+
         return res;
     }
 
@@ -26,6 +36,11 @@ final public class Calculations {
      */
     public static int multiply(int op1, int op2) {
         int res = op1 * op2;
+        long resLong = (long)op1 * (long)op2;
+    
+        if (res != resLong) {
+            throw new ArithmeticException("Integer range exceeded");
+        }
     
         return res;
     }
