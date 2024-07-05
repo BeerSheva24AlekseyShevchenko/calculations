@@ -1,6 +1,8 @@
 package telran.introduction;
 
-public class Calculations {    
+final public class Calculations {
+    private Calculations() {}
+
     /**
      * Returns the sum of the arguments.
      */
